@@ -1,6 +1,20 @@
 # About docker-fop
 
-This is the Git repo for the Docker image [chrwahl/fop](https://hub.docker.com/r/chrwahl/fop) -- a Docker image for running [Apache™ FOP](https://xmlgraphics.apache.org/fop/).
+This is the Git repo for the Docker image [chrwahl/fop](https://hub.docker.com/r/chrwahl/fop) — a Docker image for running [Apache™ FOP](https://xmlgraphics.apache.org/fop/).
+
+You can either build your own Docker image or you can pull the image from Docker Hub.
+
+Build an image from the Docker file:
+
+```
+docker build -t fop .
+
+```
+Pull the image from Docker Hub:
+```
+docker pull chrwahl/fop
+```
+If you build your own image you can replace "chrwahl/fop" with "fop" in the following commands.
 
 ## How to use this image
 
