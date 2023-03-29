@@ -2,7 +2,7 @@
 FROM ubuntu
 
 # set path for the FOP installation
-ENV PATH "$PATH:/usr/local/fop-2.7/fop"
+ENV PATH "$PATH:/usr/local/fop-2.8/fop"
 
 # update lists of packages
 RUN apt-get update
@@ -13,11 +13,11 @@ RUN apt-get install -y default-jre
 # install wget
 RUN apt-get install -y wget
 
-# get the version 2.7 of FOP
-RUN wget http://ftp.download-by.net/apache/xmlgraphics/fop/binaries/fop-2.7-bin.tar.gz
+# get the version 2.8 of FOP
+RUN wget http://ftp.download-by.net/apache/xmlgraphics/fop/binaries/fop-2.8-bin.tar.gz
 
 # unpack FOP into /usr/local
-RUN tar -xvzf fop-2.7-bin.tar.gz -C /usr/local
+RUN tar -xvzf fop-2.8-bin.tar.gz -C /usr/local
 
 # entrypoint 
 ENTRYPOINT ["fop"]
