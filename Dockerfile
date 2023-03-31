@@ -14,7 +14,7 @@ RUN apt-get install -y default-jre
 RUN apt-get install -y wget
 
 # get the version 2.8 of FOP
-RUN wget http://ftp.download-by.net/apache/xmlgraphics/fop/binaries/fop-2.8-bin.tar.gz
+RUN wget https://archive.apache.org/dist/xmlgraphics/fop/binaries/fop-2.8-bin.tar.gz
 
 # unpack FOP into /usr/local
 RUN tar -xvzf fop-2.8-bin.tar.gz -C /usr/local
