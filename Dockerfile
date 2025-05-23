@@ -13,7 +13,7 @@ RUN apt-get install -y default-jre
 # install wget
 RUN apt-get install -y wget
 
-# get the version 2.9 of FOP
+# get the version 2.11 of FOP
 RUN wget https://archive.apache.org/dist/xmlgraphics/fop/binaries/fop-2.11-bin.tar.gz
 
 # unpack FOP into /usr/local
